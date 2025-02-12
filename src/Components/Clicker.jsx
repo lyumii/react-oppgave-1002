@@ -12,7 +12,7 @@ export default function Clicker() {
     if (cookieNum === 1) {
       setCookieState(badcookieimg);
       setClicker((prevClick) => {
-        if (prevClick <= 0) {
+        if (prevClick <= 1) {
           return 0;
         } else {
           return prevClick - 2;
