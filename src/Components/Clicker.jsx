@@ -32,8 +32,8 @@ export default function Clicker() {
       <h2>Your neighbourhood friendly Cookie Clicker, but with a twist!</h2>
       <p> Pointless amount of points: {click} </p>
       <div onClick={clickCookie}>
-        <img src={cookieState} alt="Cookie" />
-        <p>
+        <img src={cookieState} alt="Cookie" className="imgcookie" />
+        <p className="paracookie">
           {cookieState === cookieimg
             ? "Tasty tasty cookie!"
             : cookieState === badcookieimg

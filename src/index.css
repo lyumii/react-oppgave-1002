@@ -1,4 +1,75 @@
-img {
+.imgcookie {
   width: 100px;
   height: 100px;
+}
+
+body {
+  background-color: rgb(245, 228, 220);
+}
+
+.catDiv {
+  width: 18rem;
+  height: 22rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  filter: sepia(10%);
+  transform: rotate(-2deg);
+}
+
+.catimg {
+  padding: 1rem;
+}
+
+.catPar {
+  font-size: 0.7em;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.05em rgb(97, 84, 84);
+}
+
+.catBtns {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+  position: relative;
+}
+
+.btnDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  bottom: 8rem;
+  left: 1rem;
+}
+
+.btnDiv button {
+  border: none;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.favelist {
+  background-color: white;
+  width: 25rem;
+  height: 35rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+section {
+  display: flex;
+  margin-top: 5rem;
+  gap: 4rem;
+}
+
+.catlisth {
+  padding: 3rem;
+  text-align: center;
+  font-style: italic;
 }
