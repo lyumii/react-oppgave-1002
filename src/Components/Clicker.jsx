@@ -3,6 +3,7 @@ import badcookieimg from "../assets/badcookie.png";
 import cookieimg from "../assets/cookie.png";
 import goldencookieimg from "../assets/goldencookie.png";
 import cookiestar from "../assets/cookiestar.png";
+import Confetti from "react-confetti-boom";
 
 export default function Clicker() {
   const [click, setClicker] = React.useState(0);
@@ -39,11 +40,17 @@ export default function Clicker() {
             {" "}
             Pointless amount of points: <span> {click} </span>
           </p>
+          {click % 10 === 0 && click !== 0 && (
+            <Confetti y="0.1" x="0.1" shapeSize="25" />
+          )}
           <img src={cookiestar} alt="cookie" />
         </div>
         <div className="cookiediv" onClick={clickCookie}>
           <img src={cookieState} alt="Cookie" className="imgcookie" />
           <p className="paracookie">
+            {click % 10 === 0 && click !== 0 && (
+              <Confetti y="0.1" x="0.1" shapeSize="25" />
+            )}
             {cookieState === cookieimg
               ? "Tasty tasty cookie!"
               : cookieState === badcookieimg
