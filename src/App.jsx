@@ -3,6 +3,7 @@ import Clicker from "./Components/Clicker";
 import Cats from "./Components/Cats";
 
 function App() {
-  return <Cats />;
+  // return <Cats />;
+  return <Clicker />;
 }
 export default App;

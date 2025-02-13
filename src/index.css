@@ -13,6 +13,81 @@ body {
   background-color: rgb(245, 228, 220);
 }
 
+.maincookie {
+  position: relative;
+  height: 30rem;
+  width: 30rem;
+}
+
+.cookiediv,
+.pointlessdiv {
+  position: absolute;
+  height: 16rem;
+  width: 12rem;
+  background-color: white;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  border: 0.5rem solid rgba(27, 2, 20, 0.532);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.461), 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+}
+
+.cookieh {
+  width: 25rem;
+  margin: 1rem;
+  padding: 1rem;
+  letter-spacing: 0.04em;
+  text-align: ;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.461), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.pointlessdiv {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pointlessdiv img {
+  width: 9em;
+  opacity: 80%;
+}
+
+.pointlessp {
+  margin: 1rem;
+  margin-top: -0.5rem;
+}
+
+.pointlessp span {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cookiebtn {
+  margin: 1rem;
+  padding: 0.1rem;
+}
+
+.cookiediv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: rotate(5deg);
+  z-index: 10;
+  top: 1rem;
+  right: 7rem;
+}
+
+.paracookie {
+  text-align: center;
+}
+
 .catDiv article {
   width: 18rem;
   height: 22rem;
@@ -59,7 +134,8 @@ body {
   z-index: 25;
 }
 
-.btnDiv button {
+.btnDiv button,
+.cookiebtn {
   border: none;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
