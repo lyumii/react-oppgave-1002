@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import FaveList from "./FaveList";
 
 export default function Cats() {
   const [loading, setLoading] = useState(true);
@@ -51,10 +52,25 @@ export default function Cats() {
 
   const [facts, setFacts] = useState("");
   const [catPic, setCatPic] = useState("");
+  const [favoriteCatFactsList, setFavoriteList] = useState([]);
+  const [newFact, setNewFact] = useState(false);
+
+  function addFave() {
+    if (facts && !favoriteCatFactsList.includes(facts)) {
+      setFavoriteList((prevList) => [...prevList, facts]);
+      setNewFact(true);
+    }
+  }
 
   useEffect(() => {
     fetchAll();
   }, []);
+
+  useEffect(() => {
+    if (newFact) {
+      setNewFact(false);
+    }
+  });
 
   return (
     <section>
@@ -73,12 +89,12 @@ export default function Cats() {
         </div>
         <div className="btnDiv">
           <button onClick={fetchAll}>New fact please</button>
-          <button>Fave me please</button>
+          <button onClick={addFave}>Fave me please</button>
         </div>
       </div>
-      {/* <article className="favelist">
-        <h1 className="catlisth">My fave cat facts!</h1>
-      </article> */}
+      {favoriteCatFactsList.length > 0 && (
+        <FaveList favoriteCatFactsList={favoriteCatFactsList} />
+      )}
     </section>
   );
 }
