@@ -7,7 +7,7 @@ body {
   background-color: rgb(245, 228, 220);
 }
 
-.catDiv {
+.catDiv article {
   width: 18rem;
   height: 22rem;
   background-color: white;
@@ -20,7 +20,9 @@ body {
 }
 
 .catimg {
-  padding: 1rem;
+  width: 13.5rem;
+  height: 13.5rem;
+  margin: 1.5rem auto;
 }
 
 .catPar {
@@ -45,18 +47,18 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  bottom: 8rem;
+  bottom: 16rem;
   left: 1rem;
 }
 
 .btnDiv button {
   border: none;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .favelist {
-  background-color: white;
+  background-color: #faf8f1;
   width: 25rem;
   height: 35rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
