@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import FaveList from "./FaveList";
-import catbg from "../assets/Cat.png";
 
 export default function Cats() {
   const [loading, setLoading] = useState(true);
