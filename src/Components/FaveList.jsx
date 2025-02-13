@@ -1,3 +1,5 @@
+import catbg from "../assets/cat.png";
+
 export default function FaveList({ favoriteCatFactsList }) {
   return (
     <article className="favelist">
@@ -7,6 +9,7 @@ export default function FaveList({ favoriteCatFactsList }) {
           <li key={index}>{fact}</li>
         ))}
       </ul>
+      <img src={catbg} alt="cartoon cat stretching" />
     </article>
   );
 }

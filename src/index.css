@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .imgcookie {
   width: 100px;
   height: 100px;
@@ -40,6 +46,7 @@ body {
   flex-direction: column;
   width: 16rem;
   position: relative;
+  z-index: 15;
 }
 
 .btnDiv {
@@ -49,6 +56,7 @@ body {
   gap: 0.5rem;
   bottom: 16rem;
   left: 1rem;
+  z-index: 25;
 }
 
 .btnDiv button {
@@ -61,15 +69,33 @@ body {
   background-color: #faf8f1;
   width: 25rem;
   height: 35rem;
+  position: relative;
   max-height: 70rem;
   overflow-y: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
+.favelist ul {
+  padding-left: 5rem;
+}
+
 .favelist li {
-  padding-left: 2rem;
-  margin: 0.5rem 0;
+  position: relative;
+  padding: 0 0.1rem;
+  margin: 0.5rem 0.5rem;
   font-style: italic;
+  z-index: 20;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(249, 220, 194, 0.6);
+}
+
+.favelist img {
+  position: absolute;
+  z-index: 5;
+  bottom: 0rem;
+  right: 0rem;
+  width: 20rem;
+  height: 15rem;
 }
 
 section {
@@ -79,7 +105,7 @@ section {
 }
 
 .catlisth {
-  padding: 3rem;
+  padding: 1.5rem;
   text-align: center;
   font-style: italic;
 }
