@@ -33,7 +33,7 @@ export default function Clicker() {
 
   useEffect(() => {
     const currentMilestone = Math.floor(click / 100) * 100;
-    if (currentMilestone !== lastClick && currentMilestone) {
+    if (currentMilestone !== lastClick && currentMilestone > lastClick) {
       setConfetti(true);
       setLastClick(click);
       setTimeout(() => setConfetti(false), 3000);
