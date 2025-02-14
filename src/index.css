@@ -5,7 +5,10 @@
 }
 
 body {
-  background-color: rgb(245, 228, 220);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(243, 233, 225);
 }
 
 .header {
@@ -139,6 +142,7 @@ body {
   width: 13.5rem;
   height: 13.5rem;
   margin: 1.5rem auto;
+  object-fit: cover;
 }
 
 .catPar {
@@ -292,7 +296,7 @@ form button {
   padding: 1rem;
   margin-left: 1rem;
   border-radius: 5px;
-  background-color: rgb(250, 232, 216);
+  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
