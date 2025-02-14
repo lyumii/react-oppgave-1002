@@ -73,7 +73,7 @@ export default function Cats() {
   });
 
   return (
-    <section>
+    <section className="catsection">
       <div className="catBtns">
         <div className="catDiv">
           {loading ? (

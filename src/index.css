@@ -174,7 +174,7 @@ body {
   height: 15rem;
 }
 
-section {
+.catsection {
   display: flex;
   margin-top: 5rem;
   gap: 4rem;
@@ -184,4 +184,85 @@ section {
   padding: 1.5rem;
   text-align: center;
   font-style: italic;
+}
+
+.animalemoji {
+  width: 2rem;
+}
+
+.usercard {
+  width: 13rem;
+  height: 4rem;
+  background-color: white;
+  margin: 0.2rem;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 0.5rem;
+  border: 2px rgb(117, 79, 50) dotted;
+  font-size: 0.9rem;
+}
+
+.usercard:hover {
+  transform: translateY(-10px); /* Card lifts up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+.userul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 27rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 27rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  padding: 0.5rem;
+  border: 2px rgb(117, 79, 50) dotted;
+  font-size: 0.9rem;
+  background-color: white;
+}
+
+form input {
+  width: 70%;
+  border: 1px rgb(117, 79, 50) solid;
+}
+form label {
+  padding: 0.5rem;
+}
+
+form button {
+  width: 92%;
+  margin-left: 0.5rem;
+  border: 2px rgb(117, 79, 50) dotted;
+  background-color: white;
+  padding: 0.3rem;
+}
+
+.usersection {
+  width: 30rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  background-color: rgb(250, 232, 216);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.usersection h2 {
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  color: rgb(117, 79, 50);
+  margin: 0.5rem;
 }
