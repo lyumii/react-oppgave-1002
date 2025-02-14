@@ -4,13 +4,46 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(245, 228, 220);
+}
+
+.header {
+  margin: 1rem;
+  background-color: rgba(241, 241, 236, 0.404);
+  width: 30rem;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.461), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.header button {
+  border: none;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(79, 76, 76, 0.461),
+    0 1px 2px rgba(79, 76, 76, 0.06);
+}
+
+.hovered {
+  scale: 1.2;
+}
+
+/* COOKIE CLICKER */
 .imgcookie {
   width: 100px;
   height: 100px;
-}
-
-body {
-  background-color: rgb(245, 228, 220);
 }
 
 .maincookie {
@@ -35,7 +68,7 @@ body {
 }
 
 .cookieh {
-  width: 25rem;
+  width: 30rem;
   margin: 1rem;
   padding: 1rem;
   letter-spacing: 0.04em;
@@ -87,6 +120,8 @@ body {
 .paracookie {
   text-align: center;
 }
+
+/* CAT FACTS */
 
 .catDiv article {
   width: 18rem;
@@ -186,6 +221,8 @@ body {
   font-style: italic;
 }
 
+/* USERS */
+
 .animalemoji {
   width: 2rem;
 }
@@ -253,7 +290,7 @@ form button {
   gap: 0.5rem;
   align-items: center;
   padding: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   border-radius: 5px;
   background-color: rgb(250, 232, 216);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

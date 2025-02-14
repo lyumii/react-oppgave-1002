@@ -11,19 +11,36 @@ function App() {
   const userComponent = () => setState("userstate");
 
   return (
-    <header className="header">
-      <h1>Pick your Poison</h1>
-      <nav>
-        <button onClick={cookieComponent}>Cookie Clicker</button>
-        <button onClick={catComponent}>Cat Facts</button>
-        <button onClick={userComponent}>Imaginary Friends</button>
-      </nav>
+    <>
+      <header className="header">
+        <h1>Pick your Poison</h1>
+        <nav>
+          <button
+            className={state === "cookiestate" ? "hovered" : ""}
+            onClick={cookieComponent}
+          >
+            Cookie Clicker
+          </button>
+          <button
+            className={state === "catstate" ? "hovered" : ""}
+            onClick={catComponent}
+          >
+            Cat Facts
+          </button>
+          <button
+            className={state === "userstate" ? "hovered" : ""}
+            onClick={userComponent}
+          >
+            Imaginary Friends
+          </button>
+        </nav>
+      </header>
       <main>
         {state === "catstate" && <Cats />}
         {state === "cookiestate" && <Clicker />}
         {state === "userstate" && <Users />}
       </main>
-    </header>
+    </>
   );
 }
 export default App;
